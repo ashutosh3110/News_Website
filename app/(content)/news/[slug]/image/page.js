@@ -11,7 +11,7 @@ export default async function ImagePage({params}){
     }
     return (
     <div className="fullscreen-image">
-        <Image src={`https://ashutoshnewswebsite.s3.ap-south-1.amazonaws.com/${newsItem.image}` } alt={newsItem.title} fill  />
+        <img src={`https://ashutoshnewswebsite.s3.ap-south-1.amazonaws.com/${newsItem.image}` } alt={newsItem.title} fill  />
     </div>
     )
 
