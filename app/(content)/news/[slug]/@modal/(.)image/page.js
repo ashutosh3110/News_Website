@@ -2,6 +2,7 @@
 import { DUMMY_NEWS } from "@/dummy-news";
 import { notFound } from "next/navigation";
 import { useRouter } from "next/navigation";
+import Image from "next/image"
 
 
 export default function InterceptedImagePage({params}){
@@ -19,7 +20,7 @@ export default function InterceptedImagePage({params}){
         <div className="modal-backdrop"  onClick={router.back} />
         <dialog className="modal" open >
     <div className="fullscreen-image">
-        <img src={`/images/news/${newsItem.image}`} alt={newsItem.title}  />
+        <Image src={`https://ashutoshnewswebsite.s3.ap-south-1.amazonaws.com/${newsItem.image}` } alt={newsItem.title}  />
     </div>
     </dialog>
     </>

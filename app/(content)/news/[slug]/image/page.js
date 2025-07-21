@@ -1,6 +1,6 @@
 import { DUMMY_NEWS } from "@/dummy-news";
 import { notFound } from "next/navigation";
-
+import Image from "next/image"
 
 export default async function ImagePage({params}){
   
@@ -11,7 +11,7 @@ export default async function ImagePage({params}){
     }
     return (
     <div className="fullscreen-image">
-        <img src={`/images/news/${newsItem.image}`} alt={newsItem.title}  />
+        <Image src={`https://ashutoshnewswebsite.s3.ap-south-1.amazonaws.com/${newsItem.image}` } alt={newsItem.title} fill  />
     </div>
     )
 
