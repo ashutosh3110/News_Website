@@ -13,7 +13,7 @@ if(!newsItem){
 <article className="news-article">
     <header>
         <Link href={`/news/${newsItem.slug}/image`}>
-        <img src={`/images/news/${newsItem.image}`} alt={newsItem.title} />
+        <img src={`https://ashutoshnewswebsite.s3.ap-south-1.amazonaws.com/${newsItem.image}` } alt={newsItem.title} />
         </Link>
         <h1>{newsItem.title}</h1>
         <time dateTime={newsItem.date}>{newsItem.date}</time>
