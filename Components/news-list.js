@@ -6,7 +6,7 @@ export default function NewsListPage({news}){
             {news.map((newsitem)=>(
                 <li key={newsitem.id}>
                     <Link href={`/news/${newsitem.slug}`}>
-                    <img src={`/images/news/${newsitem.image}`} alt={newsitem.title} />
+                    <img src={newsitem.image} alt={newsitem.title} />
                     <span>{newsitem.title}</span>
                     </Link>
                 </li>
